@@ -1,0 +1,80 @@
+.nav{
+    display: flex;
+    height: 72px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 1px 8px grey;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    height: 56px;
+    padding-left: 41%;
+}
+.menu{
+    padding-top: 0px;
+    padding-left: 5px;
+    width: 30px;
+    height: 28px;
+    margin: 30px 0px 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+.bar{
+    background-color: grey;
+    width: 100%;
+    height: 4px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+#items li a{
+    text-decoration: none;
+}
+#items li a:hover{
+    border: 1px solid grey;
+}
+#items li{
+    list-style: none;
+    padding: 16px 0px;
+
+}
+.icon .bar{
+    background-color: aqua;
+}
+.icon #bar1{
+    transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+.icon #bar2{
+    opacity: 0;
+}
+#items{
+    padding: 0;
+    margin: 0 20px;
+    transition: 1sec ease;
+    display: none;
+}
+.change{
+    background-color: darkgray;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: -100;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
